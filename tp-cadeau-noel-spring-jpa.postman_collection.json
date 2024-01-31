@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "3f161ead-28ec-441c-9657-0f881bc36ad7",
+		"name": "tp-cadeau-noel-spring-jpa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27240622"
+	},
+	"item": [
+		{
+			"name": "All cadeaux",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "// {\r\n//     firstname: String,\r\n//     lastname: String,\r\n//     email: String,\r\n//     phone: String,\r\n// }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cadeaux",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadeaux"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadeaux by Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cadeaux/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadeaux",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadeau by Id dto",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cadeaux/dto/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadeaux",
+						"dto",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadeau 1",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\": \"iPhone\",\r\n    \"description\": \"iPhone 12 Pro Max\",\r\n    \"prix\": 1250\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cadeaux",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadeaux"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadeau 1",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\": \"iPhone2\",\r\n    \"description\": \"iPhone 14 Pro Max\",\r\n    \"prix\": 1250\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cadeaux/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadeaux",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete cadeau",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/cadeaux/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cadeaux",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
